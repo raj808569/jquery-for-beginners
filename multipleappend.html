@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+jQuery(document).ready(function(){
+jQuery("button").click(function(){
+   var x = "<p>html</p>";
+   var y = "sarwan";
+   jQuery("body").append(x,y);
+});
+});
+</script>
+</head>
+<body>
+
+<p>This is a paragraph.</p>
+<button onclick="appendText()">Append text</button>
+
+</body>
+</html>

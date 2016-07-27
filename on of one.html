@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("div").on("click", function(){
+        $(this).css("background-color", "pink");
+    });
+
+    $("button").click(function(){
+        $("div").off("click");
+    });
+
+     $("p").one("click", function(){
+        $(this).animate({fontSize: "+=6px"});
+    });
+});
+</script>
+<style>
+div{
+height:300px;
+width:300px;
+float:left;
+}
+</style>
+</head>
+<body>
+
+<div>Click this paragraph to change its background color.</div>
+<div>Click the button below and then click on this paragraph (the click event is removed).</div>
+
+
+<button>Remove the click event handler</button>
+
+<p>Click any p element to increase its text size. The event will only trigger once for each p element.</p>
+<p>This is another paragraph.</p>
+
+</body>
+</html>

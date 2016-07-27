@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("input").focus(function(){
+        $(this).css("background-color", "red");
+    });
+$("input").blur(function(){
+        $(this).css("background-color", "blue");
+    });
+});
+</script>
+<style>
+span {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<input>
+
+<span>Can I have you phone number?</span>
+<p>Click in the input field to get focus.</p>
+
+</body>
+</html>

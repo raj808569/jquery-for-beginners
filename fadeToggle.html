@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The jQuery fadeToggle() method toggles between the fadeIn() and fadeOut() methods.</title>
+<script src="jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeToggle("1950");
+        $("#div2").fadeToggle("2400");
+        $("#div3").fadeToggle("3000");
+    });
+});
+</script>
+</head>
+<body>
+
+<p>Demonstrate fadeToggle() with different speed parameters.</p>
+
+<button>Click to fade in/out boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+<br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+
+</body>
+</html>

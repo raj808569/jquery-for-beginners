@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.min.js"></script>
+<script>
+jQuery(document).ready(function(){
+    $("#btn1").click(function(){
+        $("div").before("<b>Before</b>");
+    });
+
+    $("#btn2").click(function(){
+        $("div").after("<i>After</i>");
+    });
+});
+</script>
+</head>
+<body>
+
+<div style="height:100px; width:100px; background-color:red;"></div><br><br>
+
+<button id="btn1">Insert before</button>
+<button id="btn2">Insert after</button>
+
+</body>
+</html>
